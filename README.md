@@ -30,10 +30,10 @@ Full documentation, quick start guide, API reference, and examples are available
 ## Resources
 
 - [Documentation](https://developers.brainus.lk/docs/sdks/python)
-- [Get API Key](https://developer.brainus.lk/dashboard/keys)
+- [Get API Key](https://developers.brainus.lk/dashboard/keys)
 - [Support](https://github.com/BrainUsLK/brainus-ai-python/issues)
 - [Website](https://brainus.lk)
-- [Developer Portal](https://developer.brainus.lk)
+- [Developer Portal](https://developers.brainus.lk)
 
 ## License
 

@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "brainus-ai"
-version = "0.1.1"
+version = "0.1.3"
 description = "Official Python SDK for Brainus AI - RAG-powered educational content API"
 readme = "README.md"
 license = {text = "MIT"}
@@ -43,8 +43,8 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://developer.brainus.lk"
-Documentation = "https://developer.brainus.lk/docs"
+Homepage = "https://developers.brainus.lk"
+Documentation = "https://developers.brainus.lk/docs"
 Repository = "https://github.com/BrainUsLK/brainus-ai-python"
 Issues = "https://github.com/BrainUsLK/brainus-ai-python/issues"
 Changelog = "https://github.com/BrainUsLK/brainus-ai-python/blob/main/CHANGELOG.md"
