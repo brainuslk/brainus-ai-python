@@ -1,7 +1,7 @@
 """Data models for the Brainus AI SDK."""
 
 from typing import Any, Optional
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 
 
 class Citation(BaseModel):
@@ -12,6 +12,20 @@ class Citation(BaseModel):
     pages: list[int] = Field(default_factory=list, description="Page numbers referenced")
     metadata: dict[str, Any] = Field(default_factory=dict, description="Document metadata")
     chunk_text: Optional[str] = Field(None, description="Relevant text chunk")
+
+    @field_validator("pages", mode="before")
+    @classmethod
+    def validate_pages(cls, v: Any) -> Any:
+        if v is None:
+            return []
+        return v
+
+    @field_validator("metadata", mode="before")
+    @classmethod
+    def validate_metadata(cls, v: Any) -> Any:
+        if v is None:
+            return {}
+        return v
 
 
 class QueryFilters(BaseModel):

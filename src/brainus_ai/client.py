@@ -20,7 +20,7 @@ class BrainusAI:
 
     Example:
         >>> from brainus_ai import BrainusAI
-        >>> client = BrainusAI(api_key="sk_live_...")
+        >>> client = BrainusAI(api_key="brainus_...")
         >>> response = await client.query(
         ...     query="What is Python?",
         ...     store_id="abc123"  # Optional - uses default if not provided
@@ -39,13 +39,13 @@ class BrainusAI:
         Initialize the Brainus AI client.
 
         Args:
-            api_key: Your Brainus AI API key (sk_live_...)
+            api_key: Your Brainus AI API key (brainus_...)
             base_url: Base URL for the API (default: production gateway)
             timeout: Request timeout in seconds
             max_retries: Maximum number of retry attempts for failed requests
         """
-        if not api_key or not api_key.startswith("sk_live_"):
-            raise ValueError("Invalid API key format. Expected format: sk_live_...")
+        if not api_key or not api_key.startswith("brainus_"):
+            raise ValueError("Invalid API key format. Expected format: brainus_...")
 
         self.api_key = api_key
         self.base_url = base_url.rstrip("/")
