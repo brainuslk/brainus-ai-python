@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Fixed API key validation to raise `AuthenticationError` instead of `ValueError` for invalid format, ensuring consistent error handling
+- Added `message` attribute to all Brainus AI exceptions to support `e.message` access pattern
 
 ## [0.1.5] - 2025-12-12
 
